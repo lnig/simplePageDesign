@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="contact.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Contact</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>NazwaStrony.pl</h1>
+            <ul class="menu-ul">
+                <li class="menu-li"><a class="menu-links" href="index.html">Home</a></li>
+                <li class="menu-li"><a class="menu-links" href="about.html">About</a></li>
+                <li class="menu-li" id="contact"><a class="menu-links" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+
+        <aside></aside>
+    
+        <form>
+
+        <br><p>Skontaktuj się z nami, wypełniając poniższy formularz:</p><br>
+        
+            <label for="contact_reason">Cel kontaktu:</label>
+            <select id="contact_reason" name="contact_reason">
+                <option value="Ogólne">Ogólne zapytanie</option>
+                <option value="Wsparcie techniczne">Wsparcie techniczne</option>
+                <option value="Reklamacja">Reklamacja</option>
+                <option value="Inne">Inne</option>
+            </select><br>
+    
+            <label for="message">Treść wiadomości:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+    
+            <label for="name">Imię i nazwisko:</label>
+            <input type="text" class="form-control" name="name" required><br>
+    
+            <label for="email">Adres e-mail:</label>
+            <input type="email" class="form-control" name="email" required><br>
+    
+            <input id="submit" type="submit" value="Wyślij">
+        </form>
+
+    </section>
+
+    <footer>
+        <h3>NazwaStrony.pl</h3>
+        <ul>
+            <li><p>Our Social Media</p></li>
+            <li><a class="footer-links" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a class="footer-links" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a class="footer-links" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+
+        <p class="copyright-info">© 2023 Copyright. All rights reserved</p>
+        
+    </footer>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Krona One";
+    /* border: 1px solid red; */
+}
+body{
+    background-color: #191919;
+    overflow-x: hidden;
+}
+
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu-ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-grow: 1;
+}
+.menu-li{
+    margin-top: 0;
+}
+
+.menu-links{
+    font-size: 30px;
+    text-decoration: none;
+    color: #F4F9E9;
+}
+#home a.menu-links {
+    color: #ffffff80;
+}
+
+#home a.menu-links:hover{
+    border-color: #ffffff80;
+}
+
+.menu-links:hover{
+    border-bottom: 2px solid #F4F9E9;
+}
+
+h1, h3{
+    color: #F4F9E9;
+}
+
+section{
+    color: #F4F9E9;
+}
+
+#cards-box{
+    text-decoration: none;
+    list-style-type: none;
+    position: relative;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal !important;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    width: 95vw;
+    position: relative;
+    margin-top: 4vh;
+}
+
+.cards{
+    border-radius: 6px;
+    flex: 1 0 20vw;
+    margin: 12px 12px;
+    padding: 4px 4px;
+    box-shadow: 8px 8px 24px 0px rgba(6, 6, 6, 1);
+}
+
+h4{
+    text-align: center;
+    padding: 4px 0;
+}
+.cards-info{
+    color: #ffffff80;
+}
+strong{
+    color: #F4F9E9;
+}
+
+.cards-info, strong{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards img {
+    width: 20vw;
+    height: 20vh;
+    display: block;
+    margin: 0 auto; 
+    border-radius: 6px;
+}
+
+.cards:hover{
+    background-color: #000000;
+    cursor: pointer;
+}
+
+
+footer{
+    border-top: 1px solid #ffffff80;
+    height: 8vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    background-color: #111010;
+    color: #F4F9E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-grow: 1;
+}
+
+h3{
+    margin-left: 30px;
+}
+
+.footer-links{
+    font-size: 12px;
+    text-decoration: none;
+    color: #ffffff80;
+}
+i{
+    color: white;
+    font-size: 24px;
+}
+
+.copyright-info{
+    margin-right: 1vw;
+    font-size: 10px;
+    color: rgba(255,255,255,0.5)
+}
+
+
+
+@media (max-width:800px){
+    nav, ul{
+        flex-direction: column;
+    }
+}

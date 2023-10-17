@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Krona One";
+    /* border: 1px solid red; */
+}
+body{
+    background-color: #191919;
+}
+
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu-ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-grow: 1;
+}
+.menu-li{
+    margin-top: 0;
+}
+
+.menu-links{
+    font-size: 30px;
+    text-decoration: none;
+    color: #F4F9E9;
+}
+
+#contact a.menu-links {
+    color: #ffffff80;
+}
+
+#contact a.menu-links:hover{
+    border-color: #ffffff80;
+}
+
+.menu-links:hover{
+    border-bottom: 2px solid #F4F9E9;
+}
+
+h1, h3{
+    color: #F4F9E9;
+}
+
+aside{
+    position: absolute;
+    right: 10px;
+    align-items: center;
+    background-image: url(contact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45vw;
+    height: 80vh;
+}
+
+section{
+    color: white;
+}
+
+form{
+    position: relative;
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #F4F9E9;
+}
+
+.form-control{
+    width: 25vw;
+    height: 5vh;
+    padding: 0 8px 0 16px;
+    background: #191919;
+    color: #989c9e;
+    border-color: #F4F9E9;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: left;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #F4F9E9; 
+}
+
+.form-control::placeholder{
+    color: #989c9e;
+}
+
+.form-control:hover::placeholder{
+    color: #F4F9E9;
+}
+
+.form-control:focus,
+.form-control:valid{
+    border-color: #267b7f;
+    transition: all 0.3s ease;
+    color: #F4F9E9;
+}
+
+.form-control:focus::placeholder, textarea:focus::placeholder {
+    color: transparent;
+}
+
+.form-control:focus:hover::placeholder, textarea:focus:hover::placeholder {
+    color: transparent;
+}
+
+#message{
+    resize: none;
+    width: 25vw;
+    height: 25vh;
+    padding: 8px 8px 8px 16px;
+    background: #191919;
+    font-weight: 400;
+    color: #989c9e;
+    font-size: 16px;
+    text-align: left;
+}
+
+#message:focus,
+#message:valid{
+    outline: 1px #267b7f;
+    color: #F4F9E9;
+    border-color: #F4F9E9;
+    transition: all 0.3s ease;
+}
+
+select{
+    width: 15vw;
+    border-radius: 6px;
+}
+
+#submit{
+    width: 12.5vw;
+    height: 6.85vh;
+    padding: 0 10px 0 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    background: #267b7f;
+    color: #fefdfd;
+    border-color: #005a14;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 40px 40px 40px 40px;
+    font-weight: bold;
+    font-size: 2.78vh;
+    outline: none;
+    margin-top: 1vh;
+}
+
+
+footer{
+    border-top: 1px solid #ffffff80;
+    height: 8vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    background-color: #111010;
+    color: #F4F9E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-grow: 1;
+}
+
+h3{
+    margin-left: 30px;
+}
+
+.footer-links{
+    font-size: 12px;
+    text-decoration: none;
+    color: #ffffff80;
+}
+i{
+    color: white;
+    font-size: 24px;
+}
+
+.copyright-info{
+    margin-right: 1vw;
+    font-size: 10px;
+    color: rgba(255,255,255,0.5)
+}
+
+
+
+@media (max-width:800px){
+    nav, ul{
+        flex-direction: column;
+    }
+}
